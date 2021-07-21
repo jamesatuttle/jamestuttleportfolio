@@ -1,0 +1,235 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Spartan', arial, helvetica, sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+* {
+  /* outline: thin solid black; */
+}
+
+.full_page_section {
+  min-height: calc(100vh - 200px);
+  height: auto;
+  width: 100%;
+}
+.full_page_section:nth-child(odd) {
+  background-color: RGB(84,143,145);
+  color: #FFFFFF;
+}
+.full_page_section:nth-child(even) {
+  background-color: #FFFFFF;
+  color: RGB(84,143,145);
+}
+
+.section_container {
+  padding: 100px 10%;
+  width: 80%;
+}
+
+h1 {
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 2em;
+}
+
+p {
+  font-weight: 200;
+  line-height: 30px;
+}
+
+a.primary {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  padding: 10px 10px;
+  background-color: RGB(68,68,68);
+  transition: background-color 0.2s ease;
+  text-transform: capitalize;
+}
+a.primary:hover, a.primary:active, a.primary:focus {
+  background-color: #FFFFFF;
+  color: RGB(68,68,68);
+  transition: background-color 0.2s ease;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo_container #logo_box {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #30555C;
+  position: absolute;
+  top: 90px;
+  left: calc(10% - 5px);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: inline-block;
+  width: auto;
+  margin-right: 10px;
+  font-size: 1em;
+}
+nav ul li:last-of-type {
+  margin-right: 0;
+}
+nav ul li a {
+  text-decoration: none;
+  color: RGB(68,68,68);;
+  transition: text-decoration 0.2s ease;
+}
+nav ul li a:visited {
+  color: black;
+}
+nav ul li a:hover, nav ul li a:active, nav ul li a:focus {
+  text-decoration: underline;
+  text-decoration-color: #FFFFFF;
+  transition: text-decoration 0.2s ease;
+}
+
+#introduction_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+}
+
+#introduction_container .text_container h2 {
+  margin-bottom: 50px;
+}
+
+#introduction_container .text_container p {
+  margin-bottom: 50px;
+}
+
+#introduction_container .image_container {
+  width: 400px;
+  height: 400px;
+  margin: 20px 0 20px 20px;
+  background-image: url('../assets/images/3_dDkgMDAwMzc copy.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-color: RGB(84,143,145);
+}
+
+#scroll_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: stretch;
+  align-items: center;
+}
+
+@keyframes flash_text {
+  0%   {opacity: 1;}
+  50%   {opacity: 0.3;}
+  100%   {opacity: 1;}
+}
+
+#scroll_container #scroll_text {
+  font-size: 0.8em;
+  position: relative;
+  top: 10px;
+  animation-name: flash_text;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scroll_down {
+  0%   {top: 28px;}
+  50%   {top: 47px;}
+  100%   {top: 28px;}
+}
+
+#scroll_icon .circle {
+  border-radius: 100px;
+  position: relative;
+  top: 34px;
+  width: 16px;
+  height: 16px;
+  background-color: RGB(84,143,145);
+  z-index: 1;
+  left: 2px;
+  top: 28px;
+  animation-name: scroll_down;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+#scroll_icon .line {
+  width: 20px;
+  height: 40px;
+  background-color: #FFFFFF;
+  position: relative;
+  top: 9px;
+  border-radius: 100px;
+}
+
+#about_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#about_container #about_container_text {
+  background-image: url('../assets/images/about_me_background_1.png');
+  background-size: 500px;
+  background-repeat: no-repeat;
+  padding: 40px 60px;
+  width: 600px;
+}
+
+#about_container #about_container_text p:first-of-type {
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+#about_container #about_container_images {
+  background-image: url('../assets/images/about_me_background_2.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 600px;
+}
+
+#about_container #about_container_images #image_me {
+  width: 275px;
+  border-radius: 300px;
+  position: relative;
+  top: 50px;
+  left: 25px;
+}
+
+#about_container #about_container_images #image_newcastle {
+  width: 275px;
+  border-radius: 300px;
+  position: relative;
+  top: 275px;
+  left: -25px;
+}
