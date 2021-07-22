@@ -17,9 +17,15 @@ body, html {
   width: 100%;
 }
 
-.section_container {
-  padding: 100px 10%;
+.page_width {
+  padding-left: 10%;
+  padding-right: 10%;
   width: 80%;
+}
+
+.section_container {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .section_container:nth-child(odd) {
   background-color: RGB(84,143,145);
@@ -82,6 +88,7 @@ main {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 #logo_container #logo_box {
@@ -92,6 +99,12 @@ header {
   top: 90px;
   left: calc(10% - 5px);
 }
+
+#hamburger {
+  display: none;
+}
+
+
 
 nav ul {
   list-style: none;
@@ -122,6 +135,10 @@ nav a:hover, nav a:active, nav a:focus {
   /* transition: border-bottom 0.2s ease; */
 }
 
+.sub_list {
+  display: none;
+}
+
 #introduction_container {
   display: flex;
   flex-direction: row;
@@ -140,8 +157,8 @@ nav a:hover, nav a:active, nav a:focus {
 }
 
 #introduction_container .image_container {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   margin: 20px 0 20px 20px;
   background-image: url('../assets/images/3_dDkgMDAwMzc copy.jpg');
   background-size: cover;
@@ -253,18 +270,22 @@ nav a:hover, nav a:active, nav a:focus {
   left: 30px;
 }
 
-#project_container {
+#projects_tiles_container {
   display: grid;
   grid-template-columns: repeat(auto-fit, 300px);
   grid-template-rows: repeat(auto-fit, 320px);
   gap: 30px;
   align-items: flex-start;
-  grid-auto-rows: 700px;
-  grid-auto-flow: dense;
+  /* grid-auto-rows: 700px; */
+  /* grid-auto-flow: dense; */
 }
 
-#project_container #project_title_tile {
-  grid-column: span 2;
+#project_container #section_header {
+  min-width: 300px;
+  max-width: 630px;
+  width: 100%;
+  display: block;
+  margin-bottom: 40px;
 }
 
 #project_container h2 {
@@ -291,6 +312,7 @@ nav a:hover, nav a:active, nav a:focus {
   font-size: 0.9em;
   padding: 10px 20px 20px 20px;
   margin: 0;
+  max-width: 40ch;
 }
 
 .project_box a {
@@ -303,9 +325,9 @@ nav a:hover, nav a:active, nav a:focus {
 
 footer {
   width: 100%;
-  text-align: center;
+  text-align: right;
   color: RGB(84,143,145);
   text-transform: uppercase;
-  font-size: 0.8em;
+  font-size: 0.7em;
   margin-bottom: 20px;
 }

@@ -2,25 +2,46 @@
 <html>
  <head>
    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- stylesheets -->
    <link rel="stylesheet" href="stylesheets/main.css">
+   <link rel="stylesheet" href="stylesheets/responsive.css">
+
+   <!-- scripts -->
+   <script type="text/javascript" src="scripts/navigation_toggle.js"></script>
+
+   <!-- fonts -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+   <!-- favicon -->
    <link rel="icon" type="image/png" href="assets/images/favicon.ico"/>
+
+   <!-- title -->
    <title>JT Portfolio</title>
  </head>
  <body>
-   <main class='full_page_section section_container'>
+   <main class='full_page_section page_width section_container'>
      <header>
        <div id='logo_container'>
          <div id='logo_box'></div>
          <h1>JT &nbsp;Portfolio.</h1>
        </div>
+       <div id='hamburger' class='open'>
+         <button id='hamburger_button'>
+           <div class='line'></div>
+           <div class='line'></div>
+           <div class='line'></div>
+         </button>
+       </div>
        <nav role="navigation">
          <ul>
            <li><a href="#about_container">About Me</a></li>
            <li><a href="#project_container">Projects</a></li>
-           <li><a href="#">Contact Me</a></li>
+           <li class='sub_list'><a href='#'>jamestuttleportfolio.co.uk</a></li>
+           <li class='sub_list'><a href='#'>Custom Signup Tunnels</a></li>
+           <li><a href="#contact_container">Contact Me</a></li>
          </ul>
        </nav>
      </header>
@@ -43,7 +64,7 @@
      </div>
   </main>
 
-   <section id='about_container' class='full_page_section section_container'>
+   <section id='about_container' class='full_page_section page_width section_container'>
      <div id='about_container_text'>
        <h2>About Me</h2>
        <p>I grew up in the North East of England and completed my BSc. in Computer Science at Northumbria University.</p>
@@ -59,39 +80,41 @@
      </div>
    </section>
 
-   <section id='project_container' class='full_page_section section_container'>
-     <div id='project_title_tile'>
+   <section id='project_container' class='full_page_section page_width section_container'>
+     <div id='section_header'>
        <h2>Projects</h2>
        <p>Come see what I’ve been working on. Working on more and more projects and will add to this as and when they’re ready!</p>
      </div>
-     <div id='portfolio_site' class='project_box'>
-       <h3>jamestuttleportfolio.co.uk itself!</h3>
-       <p>This page was built using native HTML and CSS and that's it! I wanted to build something which was simple to maintain and look minimialistic and work across mobile, tablet and desktop.</p>
-       <a href='#' class='primary'>Find out more</a>
-     </div>
-     <div id='signup_tunnels' class='project_box'>
-       <h3>Affiliate Marketing Custom Signup Tunnels</h3>
-       <p>Custom Tunnels created to onboard affiliate partners for a Global Affiliate Marketing company based in Newcastle.</p>
-       <a href='#' class='primary'>Find out more</a>
-     </div>
-     <div id='portfolio_site' class='project_box'>
-       <h3>jamestuttleportfolio.co.uk itself!</h3>
-       <p>This page was built using native HTML and CSS and that's it! I wanted to build something which was simple to maintain and look minimialistic and work across mobile, tablet and desktop.</p>
-       <a href='#' class='primary'>Find out more</a>
-     </div>
-     <div id='signup_tunnels' class='project_box'>
-       <h3>Affiliate Marketing Custom Signup Tunnels</h3>
-       <p>Custom Tunnels created to onboard affiliate partners for an Affiliate Marketing company based in Newcastle</p>
-       <a href='#' class='primary'>Find out more</a>
-     </div>
-     <div id='portfolio_site' class='project_box'>
-       <h3>jamestuttleportfolio.co.uk itself!</h3>
-       <p>This page was built using native HTML and CSS and that's it! I wanted to build something which was simple to maintain and look minimialistic and work across mobile, tablet and desktop.</p>
-       <a href='#' class='primary'>Find out more</a>
+     <div id='projects_tiles_container'>
+       <div id='portfolio_site' class='project_box'>
+         <h3>jamestuttleportfolio.co.uk itself!</h3>
+         <p>This page was built using native HTML and CSS and that's it! I wanted to build something which was simple to maintain and look minimialistic and work across mobile, tablet and desktop.</p>
+         <a href='#' class='primary'>Find out more</a>
+       </div>
+       <div id='signup_tunnels' class='project_box'>
+         <h3>Affiliate Marketing Custom Signup Tunnels</h3>
+         <p>Custom Tunnels created to onboard affiliate partners for a Global Affiliate Marketing company based in Newcastle.</p>
+         <a href='#' class='primary'>Find out more</a>
+       </div>
+       <div id='portfolio_site' class='project_box'>
+         <h3>jamestuttleportfolio.co.uk itself!</h3>
+         <p>This page was built using native HTML and CSS and that's it! I wanted to build something which was simple to maintain and look minimialistic and work across mobile, tablet and desktop.</p>
+         <a href='#' class='primary'>Find out more</a>
+       </div>
+       <div id='signup_tunnels' class='project_box'>
+         <h3>Affiliate Marketing Custom Signup Tunnels</h3>
+         <p>Custom Tunnels created to onboard affiliate partners for an Affiliate Marketing company based in Newcastle</p>
+         <a href='#' class='primary'>Find out more</a>
+       </div>
+       <div id='portfolio_site' class='project_box'>
+         <h3>jamestuttleportfolio.co.uk itself!</h3>
+         <p>This page was built using native HTML and CSS and that's it! I wanted to build something which was simple to maintain and look minimialistic and work across mobile, tablet and desktop.</p>
+         <a href='#' class='primary'>Find out more</a>
+       </div>
      </div>
    </section>
 
-   <section id='contact_container' class='section_container'>
+   <section id='contact_container' class='page_width section_container'>
      <h2>Contact Me</h2>
      <p>Get in contact if you want to chat!</p>
      <p>Email me at <a class='secondary' href='mailto:contact@jamestuttleportfolio.co.uk'>contact@jamestuttleportfolio.co.uk</a> <small>(Click to open in Mail)</small></p>
@@ -101,7 +124,7 @@
      <a class='primary'>LinkedIn</a>
    </section>
 
-   <footer>
+   <footer class='page_width'>
      <div id='copyright_container'>Copyright &copy; 2021 James Tuttle. All rights reserved.</div>
    </footer>
  </body>
