@@ -22,7 +22,7 @@
    <title>JT Portfolio</title>
  </head>
  <body>
-   <main class='full_page_section page_width section_container'>
+   <main id='page_top' class='full_page_section page_width section_container'>
      <header>
        <div id='logo_container'>
          <div id='logo_box'></div>
@@ -37,11 +37,12 @@
        </div>
        <nav role="navigation">
          <ul>
-           <li><a href="#about_container">About Me</a></li>
-           <li><a href="#project_container">Projects</a></li>
-           <li class='sub_list'><a href='#'>jamestuttleportfolio.co.uk</a></li>
-           <li class='sub_list'><a href='#'>Custom Signup Tunnels</a></li>
-           <li><a href="#contact_container">Contact Me</a></li>
+           <li class='small_device'><a href='index.html#page_top'>Back to top</a></li>
+           <li><a href="index.html#about_container">About Me</a></li>
+           <li><a href="index.html#project_container">Projects</a></li>
+           <li class='small_device sub_list'><a href='index.html#'>jamestuttleportfolio.co.uk</a></li>
+           <li class='small_device sub_list'><a href='index.html#'>Custom Signup Tunnels</a></li>
+           <li><a href="index.html#contact_container">Contact Me</a></li>
          </ul>
        </nav>
      </header>
@@ -49,7 +50,7 @@
        <div class='text_container'>
          <h2>Welcome!</h2>
          <p>Platform Support Engineer jumping back into Frontend Web Development on the side.<br>Welcome to my Portfolio.</p>
-         <a href='#' class='primary'>Contact Me</a>
+         <a href='#contact_container' class='primary'>Contact Me</a>
        </div>
        <div class='image_container'></div>
      </div>
@@ -83,11 +84,11 @@
    <section id='project_container' class='full_page_section page_width section_container'>
      <div id='section_header'>
        <h2>Projects</h2>
-       <p>Come see what I’ve been working on. Working on more and more projects and will add to this as and when they’re ready!</p>
+       <p>Come see what I've been working on. Working on more and more projects and will add to this as and when they're ready!</p>
      </div>
      <div id='projects_tiles_container'>
        <div id='portfolio_site' class='project_box'>
-         <h3>jamestuttleportfolio.co.uk itself!</h3>
+         <h3>jamestuttleportfolio itself!</h3>
          <p>This page was built using native HTML and CSS and that's it! I wanted to build something which was simple to maintain and look minimialistic and work across mobile, tablet and desktop.</p>
          <a href='#' class='primary'>Find out more</a>
        </div>
@@ -96,32 +97,17 @@
          <p>Custom Tunnels created to onboard affiliate partners for a Global Affiliate Marketing company based in Newcastle.</p>
          <a href='#' class='primary'>Find out more</a>
        </div>
-       <div id='portfolio_site' class='project_box'>
-         <h3>jamestuttleportfolio.co.uk itself!</h3>
-         <p>This page was built using native HTML and CSS and that's it! I wanted to build something which was simple to maintain and look minimialistic and work across mobile, tablet and desktop.</p>
-         <a href='#' class='primary'>Find out more</a>
-       </div>
-       <div id='signup_tunnels' class='project_box'>
-         <h3>Affiliate Marketing Custom Signup Tunnels</h3>
-         <p>Custom Tunnels created to onboard affiliate partners for an Affiliate Marketing company based in Newcastle</p>
-         <a href='#' class='primary'>Find out more</a>
-       </div>
-       <div id='portfolio_site' class='project_box'>
-         <h3>jamestuttleportfolio.co.uk itself!</h3>
-         <p>This page was built using native HTML and CSS and that's it! I wanted to build something which was simple to maintain and look minimialistic and work across mobile, tablet and desktop.</p>
-         <a href='#' class='primary'>Find out more</a>
-       </div>
      </div>
    </section>
 
-   <section id='contact_container' class='page_width section_container'>
+   <section id='contact_container' class='page_width section_container full_page_section only_small_devices'>
      <h2>Contact Me</h2>
      <p>Get in contact if you want to chat!</p>
      <p>Email me at <a class='secondary' href='mailto:contact@jamestuttleportfolio.co.uk'>contact@jamestuttleportfolio.co.uk</a> <small>(Click to open in Mail)</small></p>
      <p>Download my CV <a class='secondary' href='assets/James Tuttle CV.pdf'>here</a> or find it on LinkedIn below.</p>
      <br>
-     <a class='primary'>GitHub</a>
-     <a class='primary'>LinkedIn</a>
+     <a class='primary' href='https://github.com/jamesatuttle'>GitHub</a>
+     <a class='primary' href='https://www.linkedin.com/in/jamesatuttle/'>LinkedIn</a>
    </section>
 
    <footer class='page_width'>
