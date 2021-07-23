@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- stylesheets -->
+   <link rel="stylesheet" href="stylesheets/main.css">
+   <link rel="stylesheet" href="stylesheets/responsive.css">
+
+   <!-- scripts -->
+   <script type="text/javascript" src="scripts/navigation_toggle.js"></script>
+
+   <!-- fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+   <!-- favicon -->
+   <link rel="icon" type="image/png" href="assets/images/favicon.ico"/>
+
+   <!-- title -->
+   <title>JT Portfolio</title>
+ </head>
+ <body>
+   <main id='page_top' class='full_page_section page_width section_container'>
+     <header>
+       <div id='logo_container'>
+         <div id='logo_box'></div>
+         <h1>JT &nbsp;Portfolio.</h1>
+       </div>
+       <div id='hamburger' class='open'>
+         <button id='hamburger_button'>
+           <div class='line'></div>
+           <div class='line'></div>
+           <div class='line'></div>
+         </button>
+       </div>
+       <nav role="navigation">
+         <ul>
+           <li><a href='index.html#page_top'>Back to home</a></li>
+           <li><a href="index.html#about_container">About Me</a></li>
+           <li><a href="index.html#project_container">Projects</a></li>
+           <li class='small_device sub_list'><a href='index.html#'>jamestuttleportfolio.co.uk</a></li>
+           <li class='small_device sub_list'><a href='index.html#'>Custom Signup Tunnels</a></li>
+           <li><a href="index.html#contact_container">Contact Me</a></li>
+         </ul>
+       </nav>
+     </header>
+     <div id="introduction_container">
+       <div class='text_container'>
+         <h2>404</h2>
+         <p>Woops! It seems this page doesn't exist. Please head back to home using the navigation or the button below.</p>
+         <a href='index.html' class='primary'>Back to home</a>
+       </div>
+     </div>
+     <footer class='page_width'>
+       <div id='copyright_container'>Copyright &copy; 2021 James Tuttle. All rights reserved.</div>
+     </footer>
+  </main>
+ </body>
+</html>
