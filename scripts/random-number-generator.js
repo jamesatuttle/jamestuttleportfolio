@@ -40,3 +40,9 @@ function checkNumberForFunFact(number) {
     document.getElementById("facts").innerHTML = '';
   }
 }
+
+facts = [
+  {"number":"9", "fact":"Cats have 9 lives"},
+  {"number":"42", "fact":"the Ultimate Question of Life, the Universe, and Everything"},
+  {"number":"1", "fact":"the lonliest number that youll ever do"}
+];
