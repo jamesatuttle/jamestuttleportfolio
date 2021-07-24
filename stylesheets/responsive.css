@@ -170,7 +170,7 @@
     top: 0;
     right: 0;
     height: 100vh;
-    width: 250px;
+    width: 275px;
     background-color: #FFFFFF;
     border-left: 1px solid RGB(84,143,145);
     z-index: 100;
@@ -178,7 +178,7 @@
 
   nav ul {
     top: 120px;
-    right: 40px;
+    left: calc(100vw - 275px + 30px);
     position: fixed;
   }
 
@@ -188,7 +188,7 @@
     font-size: 0.9em;
   }
 
-  nav a {
+  nav a, nav a:visited {
     color: RGB(84,143,145);
   }
 

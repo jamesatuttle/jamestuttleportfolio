@@ -165,9 +165,6 @@ nav a {
   transition: text-decoration 0.2s ease;
   padding: 4px 0;
 }
-nav a:visited {
-  color: RGB(68,68,68);
-}
 nav a:hover, nav a:active, nav a:focus {
   border-bottom: 1px solid #FFFFFF;
   color: #FFFFFF;
