@@ -103,6 +103,18 @@
   }
 }
 
+@media screen and (max-width: 1000px) {
+  #projects_tiles_container {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+
+  #project_container #section_header {
+    margin-bottom: 20px;
+  }
+}
+
 @media screen and (max-width: 800px) {
   body, html {
     font-size: 14px;
@@ -117,15 +129,6 @@
 @media screen and (max-width: 788px) {
   #project_container #section_header {
     min-width: auto;
-  }
-
-  #projects_tiles_container {
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-  }
-
-  .project_box {
-    grid-template-rows: auto;
   }
 }
 
@@ -277,7 +280,7 @@
 
   #about_container #image_me {
     width: 150px;
-    margin-right: 20px;
+    margin-right: 0;
   }
 
   #about_container #image_newcastle, #about_container #image_bouldering  {

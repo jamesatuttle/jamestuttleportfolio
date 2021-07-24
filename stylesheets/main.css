@@ -7,10 +7,6 @@ body, html {
   font-size: 16px;
 }
 
-* {
-  /* outline: thin solid black; */
-}
-
 .full_page_section {
   min-height: calc(100vh - 200px);
   height: auto;
@@ -50,6 +46,7 @@ h2 {
   font-weight: 600;
   font-size: 2em;
   margin-top: 0;
+  margin-bottom: 30px;
 }
 
 p {
@@ -156,12 +153,8 @@ li.small_device {
   align-content: stretch;
 }
 
-#introduction_container h2 {
-  margin-bottom: 50px;
-}
-
 #introduction_container p {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 #introduction_container .image_container {
@@ -252,7 +245,6 @@ li.small_device {
   background-size: 100%;
   background-repeat: no-repeat;
   height: 700px;
-  /* width: 600px; */
 }
 
 #about_container .circle_image {
@@ -279,8 +271,7 @@ li.small_device {
 
 #projects_tiles_container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 300px);
-  grid-template-rows: repeat(auto-fit, 320px);
+  grid-template-columns: 1fr 1fr;
   gap: 30px;
   align-items: flex-start;
 }
@@ -290,39 +281,33 @@ li.small_device {
   max-width: 630px;
   width: 100%;
   display: block;
-  margin-bottom: 40px;
-}
-
-.project_box {
-  background-color: #FFFFFF;
-  color: RGB(68,68,68);
-  display: grid;
-  grid-template-rows: 70px 210px 40px;
+  margin-bottom: 30px;
 }
 
 .project_box h3 {
   padding: 0;
   margin: 0;
   font-size: 1.1em;
-  padding: 20px 20px 10px 20px;
-  align-self: stretch;
-  text-align: left;
-  word-break: break-all;
+  padding: 0 0 10px 0;
+}
+
+.project_box h3::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\25b6";
+  margin-right: 10px;
+  font-size: 0.6em;
+  background-color: transparent;
+}
+
+.project_box h3 a {
+  color: #FFFFFF;
 }
 
 .project_box p {
   font-size: 0.9em;
-  padding: 10px 20px 20px 20px;
-  margin: 0;
-  max-width: 40ch;
-}
-
-.project_box a {
-  width: 100%;
   padding: 0;
-  align-self: stretch;
-  text-align: center;
-  line-height: 40px;
+  margin: 0;
 }
 
 #contact_container a {
