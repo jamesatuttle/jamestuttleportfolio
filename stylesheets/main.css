@@ -333,6 +333,7 @@ li.small_device {
   padding: 0;
   margin: 0;
   font-size: 1.1em;
+  line-height: 1.3em;
   padding: 0 0 10px 0;
 }
 
@@ -353,6 +354,19 @@ li.small_device {
   font-size: 0.9em;
   padding: 0;
   margin: 0;
+}
+
+.project_box.coming_soon h3::after {
+  font-weight: normal;
+  content: "coming soon";
+  padding: 5px;
+  position: relative;
+  top: -4px;
+  margin-left: 10px;
+  line-height: 1.1em;
+  font-size: 0.6em;
+  background-color: RGB(68,68,68);
+  word-wrap: normal;
 }
 
 #contact_container a {
