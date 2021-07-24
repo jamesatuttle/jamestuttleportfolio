@@ -193,33 +193,38 @@ li.small_device {
 }
 
 @keyframes scroll_down {
-  0%   {top: 28px;}
-  70%   {top: 47px;}
-  100%   {top: 28px;}
+  0%   {padding-top: 5px; opacity: 1;}
+  50%   {padding-top: 15px; opacity: 0.3;}
+  100%   {padding-top: 5px; opacity: 1;}
 }
 
-#scroll_icon .circle {
-  border-radius: 100px;
-  position: relative;
-  top: 34px;
-  width: 16px;
-  height: 16px;
-  background-color: RGB(84,143,145);
-  z-index: 1;
-  left: 2px;
-  top: 28px;
+#scroll_icon {
+  margin-top: 5px;
   animation-name: scroll_down;
-  animation-duration: 4s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
 }
 
 #scroll_icon .line {
-  width: 20px;
-  height: 40px;
+  width: 2px;
+  height: 30px;
   background-color: #FFFFFF;
   position: relative;
   top: 9px;
+  border-radius: 0 0 100px 100px;
+}
+
+#scroll_icon .arrow_head {
+  height: 13px;
+  top: -15px;
+  left: 4px;
   border-radius: 100px;
+  transform: rotate(45deg);
+}
+#scroll_icon .arrow_head:nth-of-type(2) {
+  top: -2px;
+  left: -4px;
+  transform: rotate(-45deg);
 }
 
 #about_container {
