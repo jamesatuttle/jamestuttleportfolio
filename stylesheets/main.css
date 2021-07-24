@@ -213,7 +213,7 @@ li.small_device {
   100%   {opacity: 1;}
 }
 
-#scroll_container #scroll_text {
+#scroll_container span {
   font-size: 0.8em;
   position: relative;
   top: 10px;
@@ -223,38 +223,48 @@ li.small_device {
 }
 
 @keyframes scroll_down {
-  0%   {top: 5px; opacity: 1;}
-  50%   {top: 15px; opacity: 0.3;}
-  100%   {top: 5px; opacity: 1;}
+  0%   {top: 15px; opacity: 1;}
+  50%   {top: 22px; opacity: 0.3;}
+  100%   {top: 15px; opacity: 1;}
 }
 
-#scroll_icon {
+.down_arrow {
+  width: 2px;
+  height: 30px;
+  background-color: #FFFFFF;
   position: relative;
+  top: 15px;
+  border-radius: 0 0 100px 100px;
+  position: relative;
+  display: block;
   animation-name: scroll_down;
   animation-duration: 3s;
   animation-iteration-count: infinite;
 }
 
-#scroll_icon .line {
+.down_arrow::before {
+  content: "";
   width: 2px;
-  height: 30px;
   background-color: #FFFFFF;
   position: relative;
-  top: 9px;
-  border-radius: 0 0 100px 100px;
-}
-
-#scroll_icon .arrow_head {
   height: 13px;
-  top: -15px;
+  top: 19px;
   left: 4px;
   border-radius: 100px;
   transform: rotate(45deg);
+  display: block;
 }
-#scroll_icon .arrow_head:nth-of-type(2) {
-  top: -2px;
+.down_arrow::after {
+  content: "";
+  width: 2px;
+  height: 13px;
+  background-color: #FFFFFF;
+  position: relative;
+  top: 6px;
   left: -4px;
+  border-radius: 100px;
   transform: rotate(-45deg);
+  display: block
 }
 
 #about_container {
