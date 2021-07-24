@@ -10,7 +10,7 @@
 
       gtag('config', 'G-1CHYS2LVHW');
     </script>
-    
+
    <meta name="viewport" content="width=device-width, initial-scale=1">
 
    <!-- stylesheets -->
@@ -47,7 +47,7 @@
        </div>
        <nav role="navigation">
          <ul>
-           <li><a href='index.html#page_top'>Back to home</a></li>
+           <li><a href='index.html#page_top'>Home</a></li>
            <li><a href="index.html#about_container">About Me</a></li>
            <li><a href="index.html#project_container">Projects</a></li>
            <li class='small_device sub_list'><a href='index.html#'>jamestuttleportfolio.co.uk</a></li>

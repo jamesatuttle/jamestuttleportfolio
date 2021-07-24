@@ -132,6 +132,13 @@
   }
 }
 
+@media screen and (max-width: 670px) {
+  #number_generator_container {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+}
+
 @media screen and (max-width: 650px) {
   h2 {
     font-size: 1.4em;
@@ -285,6 +292,17 @@
 
   #about_container #image_newcastle, #about_container #image_bouldering  {
     display: none;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  input[type='number'], input[type='text'] {
+    width: 90%;
+    padding: 10px 5%;
+  }
+
+  .output_container {
+    text-align: center;
   }
 }
 

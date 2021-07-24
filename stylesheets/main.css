@@ -54,7 +54,11 @@ p {
   line-height: 30px;
 }
 
-a.primary {
+a:hover, button:hover, input[type='submit']:hover {
+  cursor: pointer;
+}
+
+a.primary, button.primary, input[type=submit].primary {
   text-decoration: none;
   color: #FFFFFF;
   padding: 10px 10px;
@@ -62,12 +66,14 @@ a.primary {
   transition: background-color 0.2s ease;
   font-weight: 200;
   color: #FFFFFF;
+  border: none;
+  font-size: 1em;
+  font-family: 'Spartan', arial, helvetica, sans-serif;
 }
 a.primary:hover, a.primary:active, a.primary:focus {
   background-color: #FFFFFF;
   color: RGB(68,68,68);
   transition: background-color 0.2s ease;
-  cursor: pointer;
 }
 
 a.secondary {
@@ -78,7 +84,34 @@ a.secondary {
 a.secondary:hover, a.secondary:active, a.secondary:focus {
   text-decoration: underline;
   transition: text-decoration 0.2s ease;
-  cursor: pointer;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+label {
+  display: block;
+  padding-bottom: 10px;
+}
+
+input[type='number'], input[type='text'] {
+  display: block;
+  padding: 10px 20px;
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 0;
+}
+
+input[type='submit'], button {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.input_container {
+  margin: 0 0 50px 0;
 }
 
 main {
@@ -96,7 +129,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 #logo_container #logo_box {
@@ -229,7 +262,7 @@ li.small_device {
 
 #about_container {
   display: grid;
-  grid-template-columns: 1fr  600px;
+  grid-template-columns: 1fr 600px;
   column-gap: 5%;
 }
 
