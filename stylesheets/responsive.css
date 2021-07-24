@@ -132,13 +132,6 @@
   }
 }
 
-@media screen and (max-width: 670px) {
-  #number_generator_container {
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
-  }
-}
-
 @media screen and (max-width: 650px) {
   h2 {
     font-size: 1.4em;
@@ -277,6 +270,11 @@
     padding-bottom: 10px;
     text-align: center;
     font-size: 0.65em;
+  }
+
+  #number_generator_container {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
   }
 }
 
