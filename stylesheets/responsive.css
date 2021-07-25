@@ -276,6 +276,14 @@
     grid-template-columns: auto;
     grid-template-rows: auto auto;
   }
+
+  .drawing_and_info_container {
+    margin: 0 0 50px 0;
+  }
+
+  .drawing_container {
+    padding: 50px 2%;
+  }
 }
 
 @media screen and (max-width: 480px) {

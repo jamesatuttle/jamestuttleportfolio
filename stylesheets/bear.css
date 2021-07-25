@@ -1,0 +1,103 @@
+.drawing_container.bear {
+  height: 200px;
+}
+
+.bear .face {
+  border-radius: 100%;
+  width: 200px;
+  height: 190px;
+  background-color: RGB(139,107,86);
+  z-index: 200;
+  position: relative;
+}
+
+.bear .ear {
+  border-radius: 80px;
+  width: 80px;
+  height: 80px;
+  background-color: RGB(139,107,86);
+  position: relative;
+  bottom: 280px;
+  left: -10px;
+}
+
+.bear .ear:nth-of-type(2) {
+  bottom: 200px;
+  left: 130px;
+}
+
+.bear .ear::before {
+  content: "";
+  height: 50px;
+  width: 50px;
+  background-color: pink;
+  display: block;
+  border-radius: 50px;
+  z-index: 100;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.bear .ear:nth-of-type(2)::before {
+  left: 20px;
+}
+
+.bear .mouth_nose {
+  border-radius: 80px;
+  width: 60px;
+  height: 60px;
+  background-color: pink;
+  position: relative;
+  bottom: 250px;
+  left: 70px;
+  z-index: 300;
+}
+
+.bear .mouth_nose::before {
+  display: block;
+  content: "";
+  border-radius: 80px;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  position: relative;
+  bottom: 20px;
+  right: 10px;
+  z-index: 300;
+}
+
+.bear .mouth_nose::after {
+  display: block;
+  content: "";
+  border-radius: 80px;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  position: relative;
+  bottom: 50px;
+  left: 50px;
+  z-index: 300;
+}
+
+.bear .nose {
+  border-radius: 100%;
+  width: 15px;
+  height: 10px;
+  background-color: black;
+  position: relative;
+  left: 22px;
+  z-index: 300;
+}
+
+.bear .nose::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 10px;
+  background-color: black;
+  position: relative;
+  left: 7px;
+  top: 7px;
+  z-index: 300;
+}

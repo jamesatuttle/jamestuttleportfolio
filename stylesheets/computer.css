@@ -1,0 +1,70 @@
+.computer {
+
+}
+
+.computer .monitor {
+  width: 280px;
+  height: 180px;
+  background-color: RGBA(84,143,145, 0.9);;
+  border: 12px solid black;
+  border-radius: 12px;
+  z-index: 200;
+}
+
+.computer .monitor::before {
+  content: "";
+  width: 20px;
+  height: 30px;
+  background-color: black;
+  position: relative;
+  top: 190px;
+  left: 130px;
+  display: block;
+}
+
+.computer .monitor::after {
+  content: "";
+  width: 100px;
+  height: 10px;
+  background-color: black;
+  position: relative;
+  top: 190px;
+  left: 90px;
+  display: block;
+  border-radius: 10px 10px 0 0;
+}
+
+.computer .buttons {
+  width: 4px;
+  height: 4px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  bottom: 8px;
+  left: 280px;
+  z-index: 100px;
+}
+
+.computer .buttons::before {
+  content: "BENQ";
+  width: 20px;
+  height: 30px;
+  position: relative;
+  top: 0px;
+  right: 135px;
+  display: block;
+  color: #FFFFFF;
+  font-size: 5px;
+}
+
+.computer .text::before {
+  content: "Hi there!";
+  font-size: 16px;
+  color: #FFFFFF;
+  height: 10px;
+  width: 30px;
+  bottom: 185px;
+  left: 20px;
+  position: relative;
+}
