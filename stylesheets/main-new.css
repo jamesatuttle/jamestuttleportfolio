@@ -102,8 +102,7 @@ a.secondary, button.secondary, input[type=submit].secondary {
     background-color: #548F91;
     color: #FFFFFF; }
     .section_container:nth-child(odd) + footer {
-      background-color: #548F91;
-      color: #FFFFFF; }
+      color: #548F91; }
     .section_container:nth-child(odd) a.secondary {
       color: #FFFFFF; }
   .section_container:nth-child(even) {
@@ -349,4 +348,4 @@ input[type='submit'], button {
 .input_container {
   margin: 0 0 50px 0; }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main-new.css.map */
