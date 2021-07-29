@@ -2,18 +2,8 @@ function generateRandomNumber() {
   let min = document.getElementById("min").value;
   let max = document.getElementById("max").value;
 
-  // let randomNumber = Math.floor(Math.random() * (max - min + 1) + min)
-
-  // let random = Math.random();
-
   min = parseInt(min);
   max = parseInt(max);
-
-  // console.log(random);
-  //
-  // console.log(`random (${random}) * max (${max}) = ${random * max}`);
-  //
-  // console.log(`+ min (${min}) = ${(random * max) + min}`);
 
   let number = Math.floor(Math.random() * (max - min + 1)) + min;
 
@@ -25,7 +15,7 @@ function generateRandomNumber() {
 function checkNumberForFunFact(number) {
   var searchResult = facts.filter(x => x.number === number);
 
-  if (searchResult.length > 0) {
+  if (searchResult.length) {
     document.getElementById("facts").innerHTML = `(Fun Fact: ${searchResult[0].fact})`;
   } else {
     document.getElementById("facts").innerHTML = '';
