@@ -2,7 +2,10 @@ button:hover, input[type='submit']:hover {
   cursor: pointer;
 }
 
-button, input[type=submit] {
+button {
+  -webkit-appearance: none;
+  border-radius: 0;
+
   &.primary, &.primary:active, &.primary:focus {
     text-decoration: none;
     color: $secondary-text-color;
@@ -15,7 +18,7 @@ button, input[type=submit] {
     font-size: 1em;
     font-family: $primary-font;
 
-    &:hover, &:active, &:focus {
+    &:hover, &:focus {
       background-color: $primary-text-color;
       color: $third-color;
       transition: background-color 0.2s ease;

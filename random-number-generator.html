@@ -66,33 +66,38 @@
          <p>A simple tool built in Javascript which takes in a minimum and maximum number and produces a random number between. There is also a JSON collection in the background with random number facts/trivia, if you hit the right number you'll get a fact! Take a look and have a play around.</p>
        </div>
      </div>
-     <div id='number_generator_container'>
-       <form action="#" onsubmit="generateRandomNumber();return false">
-         <fieldset>
-           <div class='input_container'>
-             <label for='min'>Minimum Number</label>
-             <input type='number' id='min' required>
-             <p class='validation'></p>
-           </div>
-           <div class='input_container'>
-             <label for='max'>Maximum Number</label>
-             <input type='number' id='max' required>
-             <p class='validation'></p>
-           </div>
-           <div class='input_container'>
-             <input type='submit' value='Generate!' class='primary'/>
-           </div>
-         </fieldset>
-       </form>
-       <div class='output_container'>
-         <p>Your randomly generated number is:</p>
-         <p id='output'></p>
-         <p id='facts'></p>
-       </div>
+     <div id='scroll_container'>
+       <span>Scroll down</span>
+       <div class='down_arrow'></div>
      </div>
   </main>
 
-   <section id='contact_container' class='page_width section_container full_page_section only_small_devices'>
+  <section id='number_generator_container' class='page_width section_container full_page_section only_small_devices'>
+    <form action="#" onsubmit="generateRandomNumber();return false">
+      <fieldset>
+        <div class='input_container'>
+          <label for='min'>Minimum Number</label>
+          <input type='number' id='min' required>
+          <p class='validation'></p>
+        </div>
+        <div class='input_container'>
+          <label for='max'>Maximum Number</label>
+          <input type='number' id='max' required>
+          <p class='validation'></p>
+        </div>
+        <div class='input_container'>
+          <input type='submit' value='Generate!' class='primary'/>
+        </div>
+      </fieldset>
+    </form>
+    <div class='output_container'>
+      <p>Your randomly generated number is:</p>
+      <p id='output'>Fill in the form to see something happen</p>
+      <p id='facts'></p>
+    </div>
+  </section>
+
+   <section id='contact_container' class='page_width section_container'>
      <h2>Contact Me</h2>
      <p>Get in contact if you want to chat!</p>
      <p>Email me at <a class='secondary' href='mailto:contact@jamestuttleportfolio.co.uk'>contact@jamestuttleportfolio.co.uk</a><br><small>(Click to open in your email client)</small></p>

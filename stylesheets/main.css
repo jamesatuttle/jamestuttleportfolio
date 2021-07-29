@@ -18,28 +18,31 @@
 button:hover, input[type='submit']:hover {
   cursor: pointer; }
 
-button.primary, button.primary:active, button.primary:focus, input[type=submit].primary, input[type=submit].primary:active, input[type=submit].primary:focus {
-  text-decoration: none;
-  color: #548F91;
-  padding: 10px 10px;
-  background-color: #444444;
-  transition: background-color 0.2s ease;
-  font-weight: 200;
-  color: #FFFFFF;
-  border: none;
-  font-size: 1em;
-  font-family: "Spartan", arial, helvetica, sans-serif; }
-  button.primary:hover, button.primary:active, button.primary:focus, button.primary:active:hover, button.primary:active:active, button.primary:active:focus, button.primary:focus:hover, button.primary:focus:active, button.primary:focus:focus, input[type=submit].primary:hover, input[type=submit].primary:active, input[type=submit].primary:focus, input[type=submit].primary:active:hover, input[type=submit].primary:active:active, input[type=submit].primary:active:focus, input[type=submit].primary:focus:hover, input[type=submit].primary:focus:active, input[type=submit].primary:focus:focus {
-    background-color: #FFFFFF;
-    color: #444444;
-    transition: background-color 0.2s ease; }
-button.secondary, input[type=submit].secondary {
-  font-weight: 700;
-  color: #548F91;
-  text-decoration: none; }
-  button.secondary:hover, button.secondary:active, button.secondary:focus, input[type=submit].secondary:hover, input[type=submit].secondary:active, input[type=submit].secondary:focus {
-    text-decoration: underline;
-    transition: text-decoration 0.2s ease; }
+button {
+  -webkit-appearance: none;
+  border-radius: 0; }
+  button.primary, button.primary:active, button.primary:focus {
+    text-decoration: none;
+    color: #548F91;
+    padding: 10px 10px;
+    background-color: #444444;
+    transition: background-color 0.2s ease;
+    font-weight: 200;
+    color: #FFFFFF;
+    border: none;
+    font-size: 1em;
+    font-family: "Spartan", arial, helvetica, sans-serif; }
+    button.primary:hover, button.primary:focus, button.primary:active:hover, button.primary:active:focus, button.primary:focus:hover, button.primary:focus:focus {
+      background-color: #FFFFFF;
+      color: #444444;
+      transition: background-color 0.2s ease; }
+  button.secondary {
+    font-weight: 700;
+    color: #548F91;
+    text-decoration: none; }
+    button.secondary:hover, button.secondary:active, button.secondary:focus {
+      text-decoration: underline;
+      transition: text-decoration 0.2s ease; }
 
 a:hover {
   cursor: pointer; }
@@ -116,11 +119,35 @@ input[type='number'], input[type='text'] {
   padding: 10px 20px;
   -webkit-appearance: none;
   border: none;
-  border-radius: 0; }
+  border-radius: 0;
+  border: 1px solid #548F91; }
 
-input[type='submit'], button {
+input[type='submit'] {
   -webkit-appearance: none;
   border-radius: 0; }
+  input[type='submit'].primary, input[type='submit'].primary:active, input[type='submit'].primary:focus {
+    text-decoration: none;
+    color: #548F91;
+    padding: 10px 10px;
+    background-color: #444444;
+    transition: background-color 0.2s ease;
+    font-weight: 200;
+    color: #FFFFFF;
+    border: none;
+    font-size: 1em;
+    font-family: "Spartan", arial, helvetica, sans-serif; }
+    input[type='submit'].primary:hover, input[type='submit'].primary:focus, input[type='submit'].primary:active:hover, input[type='submit'].primary:active:focus, input[type='submit'].primary:focus:hover, input[type='submit'].primary:focus:focus {
+      background-color: #FFFFFF;
+      border: 1px solid #444444;
+      color: #444444;
+      transition: background-color 0.2s ease; }
+  input[type='submit'].secondary {
+    font-weight: 700;
+    color: #548F91;
+    text-decoration: none; }
+    input[type='submit'].secondary:hover, input[type='submit'].secondary:active, input[type='submit'].secondary:focus {
+      text-decoration: underline;
+      transition: text-decoration 0.2s ease; }
 
 h1 {
   font-weight: 200;

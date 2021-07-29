@@ -191,7 +191,7 @@
   }
 
   li.small_device {
-    display: block;
+    display: block !important;
   }
 
   li.sub_list {
