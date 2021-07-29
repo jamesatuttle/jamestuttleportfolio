@@ -30,6 +30,11 @@
     font-size: 14px;
   }
 
+  #logo_container #logo_box {
+    width: 45px;
+    height: 45px;
+  }
+
   #about_container {
     grid-template-columns: 1fr 400px;
   }
@@ -118,11 +123,6 @@
 @media screen and (max-width: 800px) {
   body, html {
     font-size: 14px;
-  }
-
-  #logo_container #logo_box {
-    width: 45px;
-    height: 45px;
   }
 }
 
