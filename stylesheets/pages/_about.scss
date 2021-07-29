@@ -1,0 +1,46 @@
+#about_container {
+  display: grid;
+  grid-template-columns: 1fr 600px;
+  column-gap: 5%;
+
+  #about_container_text {
+    background-image: url('../assets/images/about_me_background_1.png');
+    background-size: 500px;
+    background-repeat: no-repeat;
+    padding: 60px 0 0 60px;
+
+    p:first-of-type {
+      font-size: 1.3em;
+      font-weight: 400;
+    }
+  }
+
+  #about_container_images {
+    background-image: url('../assets/images/about_me_background_2.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 700px;
+  }
+
+  .circle_image {
+    border-radius: 1000px;
+  }
+
+  #image_me {
+    width: 275px;
+    position: relative;
+  }
+
+  #image_newcastle {
+    width: 300px;
+    position: relative;
+    top: 200px;
+  }
+
+  #image_bouldering {
+    width: 240px;
+    position: relative;
+    top: 30px;
+    left: 30px;
+  }
+}

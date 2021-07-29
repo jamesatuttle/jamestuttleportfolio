@@ -1,0 +1,39 @@
+
+.down_arrow {
+  width: 2px;
+  height: 30px;
+  background-color: $primary-text-color;
+  position: relative;
+  top: 15px;
+  border-radius: 0 0 100px 100px;
+  position: relative;
+  display: block;
+  animation-name: scroll_down;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+
+  &::before {
+    content: "";
+    width: 2px;
+    background-color: $primary-text-color;
+    position: relative;
+    height: 13px;
+    top: 19px;
+    left: 4px;
+    border-radius: 100px;
+    transform: rotate(45deg);
+    display: block;
+  }
+  &::after {
+    content: "";
+    width: 2px;
+    height: 13px;
+    background-color: $primary-text-color;
+    position: relative;
+    top: 6px;
+    left: -4px;
+    border-radius: 100px;
+    transform: rotate(-45deg);
+    display: block
+  }
+}

@@ -1,0 +1,31 @@
+.drawing_and_info_container {
+  color: $color-black;
+  margin: 0 10% 50px 10%;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 2%;
+
+    img {
+      width: 200px;
+      max-width: 90%;
+    }
+  }
+
+  &:nth-of-type(1n) .container {
+    background-color: $drawing-css-container-background-one;
+  }
+
+  &:nth-of-type(2n) .container {
+    background-color: $drawing-css-container-background-two;
+  }
+
+  &:nth-of-type(3n) .container {
+    background-color: $drawing-css-container-background-three;
+  }
+}

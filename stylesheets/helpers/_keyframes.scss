@@ -1,0 +1,11 @@
+//animation keyframes
+@keyframes flash_text {
+  0%   {opacity: 1;}
+  50%   {opacity: 0.3;}
+  100%   {opacity: 1;}
+}
+@keyframes scroll_down {
+  0%   {top: 15px; opacity: 1;}
+  50%   {top: 22px; opacity: 0.3;}
+  100%   {top: 15px; opacity: 1;}
+}

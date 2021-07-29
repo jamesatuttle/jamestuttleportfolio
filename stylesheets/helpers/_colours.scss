@@ -1,0 +1,31 @@
+$color-black:                             #000000;
+$color-white:                             #FFFFFF;
+$color-dark-grey:                         #444444;
+$color-green:                             #548F91;
+$color-red:                               RGB(235,161,140);
+$color-yellow:                            RGB(232,192,102);
+$color-green-secondary:                   RGB(113,178,156);
+$color-dark-teal:                         #30555C;
+
+// colours
+$primary-color:                           $color-green;
+$secondary-color:                         $color-white;
+$third-color:                             $color-dark-grey;
+
+$primary-background-color:                $primary-color;
+$secondary-background-color:              $secondary-color;
+
+$primary-text-color:                      $secondary-color;
+$secondary-text-color:                    $primary-color;
+
+$logo-border-color:                       $color-dark-teal;
+
+$drawing-css-container-background-one:    $color-red;
+$drawing-css-container-background-two:    $color-yellow;
+$drawing-css-container-background-three:  $color-green-secondary;
+
+$color-comingsoon-background:             $third-color;
+$color-comingsoon-text:                   $secondary-color;
+
+$color-new-background:                    $secondary-color;
+$color-new-text:                          $third-color;

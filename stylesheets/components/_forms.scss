@@ -1,0 +1,23 @@
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+label {
+  display: block;
+  padding-bottom: 10px;
+}
+
+input[type='number'], input[type='text'] {
+  display: block;
+  padding: 10px 20px;
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 0;
+}
+
+input[type='submit'], button {
+  -webkit-appearance: none;
+  border-radius: 0;
+}

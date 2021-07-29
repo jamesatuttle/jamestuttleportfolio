@@ -1,0 +1,35 @@
+a:hover {
+  cursor: pointer;
+}
+
+a {
+  &.primary, &.primary:active, &.primary:focus {
+    text-decoration: none;
+    color: $secondary-text-color;
+    padding: 10px 10px;
+    background-color: $third-color;
+    transition: background-color 0.2s ease;
+    font-weight: 200;
+    color: $secondary-color;
+    border: none;
+    font-size: 1em;
+    font-family: $primary-font;
+
+    &:hover, &:active, &:focus {
+      background-color: $primary-text-color;
+      color: $third-color;
+      transition: background-color 0.2s ease;
+    }
+  }
+
+  &.secondary  {
+    font-weight: 700;
+    color: $secondary-text-color;
+    text-decoration: none;
+
+    &:hover, &:active, &:focus {
+      text-decoration: underline;
+      transition: text-decoration 0.2s ease;
+    }
+  }
+}

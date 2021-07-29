@@ -1,0 +1,74 @@
+#projects_tiles_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+#project_container #section_header {
+  min-width: 300px;
+  max-width: 630px;
+  width: 100%;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.project_box {
+  h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 1.1em;
+    line-height: 1.3em;
+    padding: 0 0 10px 0;
+
+    &::before {
+      font-family: $font-awesome;
+      font-weight: 900;
+      content: "\25b6";
+      margin-right: 10px;
+      font-size: 0.6em;
+      background-color: transparent;
+      position: relative;
+      top: -2px;
+      -webkit-appearance: none;
+    }
+
+    a {
+      color: $primary-text-color;
+    }
+  }
+
+  p {
+    font-size: 0.9em;
+    padding: 0;
+    margin: 0;
+  }
+
+  &.coming_soon h3::after {
+    font-weight: normal;
+    content: "coming soon";
+    padding: 5px;
+    position: relative;
+    top: -4px;
+    margin-left: 10px;
+    line-height: 1.1em;
+    font-size: 0.6em;
+    background-color: $color-comingsoon-background;
+    word-wrap: normal;
+  }
+
+  &.new h3::after {
+    font-weight: normal;
+    content: "new";
+    padding: 5px;
+    position: relative;
+    top: -2px;
+    margin-left: 10px;
+    line-height: 1.1em;
+    font-size: 0.6em;
+    border: 1px solid $color-new-text;
+    background-color: $color-new-background;
+    color: $color-new-text;
+    word-wrap: normal;
+  }
+}

@@ -1,0 +1,67 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#logo_container #logo_box {
+  width: 50px;
+  height: 50px;
+  border: 2px solid $logo-border-color;
+  position: absolute;
+  top: 90px;
+  left: calc(10% - 5px);
+}
+
+#hamburger {
+  display: none;
+}
+
+#introduction_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+
+  p {
+    margin-bottom: 40px;
+  }
+
+  .image_container {
+    width: 350px;
+    height: 350px;
+    margin: 20px 0 20px 20px;
+    background-image: url('../assets/images/3_dDkgMDAwMzc copy.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-color: $primary-background-color;
+  }
+}
+
+#scroll_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: stretch;
+  align-items: center;
+
+  span {
+    font-size: 0.8em;
+    position: relative;
+    top: 10px;
+    animation-name: flash_text;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+}
