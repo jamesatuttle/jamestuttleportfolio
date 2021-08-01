@@ -25,6 +25,10 @@
     &+footer {
       background-color: $primary-background-color;
       color: $primary-text-color;
+
+      a {
+        color: $primary-text-color;
+      }
     }
 
     a.secondary {

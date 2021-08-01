@@ -5,4 +5,8 @@ footer {
   text-transform: uppercase;
   font-size: 0.7em;
   padding-bottom: 20px;
+
+  a {
+    color: $secondary-text-color;
+  }
 }
