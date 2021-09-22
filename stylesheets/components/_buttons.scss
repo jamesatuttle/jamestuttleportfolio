@@ -5,18 +5,17 @@ button:hover, input[type='submit']:hover {
 button {
   -webkit-appearance: none;
   border-radius: 0;
+  padding: 10px 10px;
+  border: none;
+  font-size: 1em;
+  transition: background-color 0.2s ease;
+  font-weight: 200;
+  text-decoration: none;
+  font-family: $primary-font;
 
   &.primary, &.primary:active, &.primary:focus {
-    text-decoration: none;
-    color: $secondary-text-color;
-    padding: 10px 10px;
     background-color: $third-color;
-    transition: background-color 0.2s ease;
-    font-weight: 200;
     color: $secondary-color;
-    border: none;
-    font-size: 1em;
-    font-family: $primary-font;
 
     &:hover, &:focus {
       background-color: $primary-text-color;
@@ -26,13 +25,16 @@ button {
   }
 
   &.secondary  {
-    font-weight: 700;
-    color: $secondary-text-color;
-    text-decoration: none;
+    margin: 5px 0;
+    padding: 10px 10px 7px 10px;
+    font-size: 0.9em;
+    // line-height: 1.2em;
+    color: $third-color;
 
     &:hover, &:active, &:focus {
-      text-decoration: underline;
-      transition: text-decoration 0.2s ease;
+      background-color: $third-color;
+      color: $secondary-color;
+      transition: background-color color 0.2s ease;
     }
   }
 }

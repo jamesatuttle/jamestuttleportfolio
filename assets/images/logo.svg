@@ -5,11 +5,11 @@
     </clipPath>
   </defs>
   <g id="Custom_Size_1" data-name="Custom Size – 1" clip-path="url(#clip-Custom_Size_1)">
-    <text id="JT" transform="translate(8 32)" fill="white" font-size="100" font-family="Spartan" font-weight="200"><tspan x="0" y="86">JT</tspan></text>
+    <text id="JT" transform="translate(8 32)" fill="white" font-size="80" font-family="Spartan" font-weight="200"><tspan x="10" y="80">JT</tspan></text>
     <g id="Rectangle_1" data-name="Rectangle 1" fill="none" stroke="#38545b" stroke-width="6">
       <rect width="150" height="150" stroke="none"/>
       <rect x="3" y="3" width="144" height="144" fill="none"/>
     </g>
-    <text id="Portfolio." transform="translate(172 119)" fill="white" font-size="100" font-family="Spartan" font-weight="200"><tspan x="0" y="0">Portfolio.</tspan></text>
+    <text id="Portfolio." transform="translate(172 119)" fill="white" font-size="80" font-family="Spartan" font-weight="200"><tspan x="0" y="-5">Portfolio.</tspan></text>
   </g>
 </svg>

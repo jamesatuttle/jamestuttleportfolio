@@ -1,7 +1,7 @@
 #projects_tiles_container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  gap: 50px 30px;
   align-items: flex-start;
 }
 
@@ -19,7 +19,7 @@
     margin: 0;
     font-size: 1.1em;
     line-height: 1.3em;
-    padding: 0 0 10px 0;
+    padding: 0;
 
     &::before {
       font-family: $font-awesome;
@@ -32,21 +32,22 @@
       top: -2px;
       -webkit-appearance: none;
     }
-
-    a {
-      color: $primary-text-color;
-    }
   }
 
   p {
     font-size: 0.9em;
     padding: 0;
-    margin: 0;
+    margin: 10px 0;
+  }
+
+  a {
+    font-weight: 300;
+    text-decoration: underline;
   }
 
   &.coming_soon h3::after {
     font-weight: normal;
-    content: "coming soon";
+    content: "in progress";
     padding: 5px;
     position: relative;
     top: -4px;
