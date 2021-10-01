@@ -1,29 +1,15 @@
 <!DOCTYPE html>
 <html>
  <head>
-   <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1CHYS2LVHW"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-1CHYS2LVHW');
-    </script>
-
    <meta name="viewport" content="width=device-width, initial-scale=1">
 
    <!-- stylesheets -->
    <link rel="stylesheet" href="stylesheets/main.css">
-   <link rel="stylesheet" href="stylesheets/responsive.css">
-
-   <!-- scripts -->
-   <script type="text/javascript" src="scripts/navigation_toggle.js"></script>
 
    <!-- fonts -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
 
    <!-- favicon -->
    <link rel="icon" type="image/png" href="assets/images/favicon.ico"/>
@@ -32,100 +18,148 @@
    <link href="assets/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet"> <!--load all styles -->
 
    <!-- title -->
-   <title>JT Portfolio</title>
+   <title>James Tuttle Portfolio</title>
+   <script type='text/javascript'>
+    var i = 0;
+    var images = [];
+    var slideTime = 3000; // 3 seconds
+
+    images[0] = 'assets/images/newcastle.jpeg';
+    images[1] = 'assets/images/zakynthos.jpg';
+    images[2] = 'assets/images/street_art_1.jpg';
+    images[3] = 'assets/images/street_art_2.jpg';
+    images[4] = 'assets/images/street_art_3.jpg';
+    images[5] = 'assets/images/street_art_4.jpg';
+    images[6] = 'assets/images/street_art_5.jpg';
+
+    function changePicture() {
+      document.getElementById("about_me_image").src = images[i];
+
+        if (i < images.length - 1) {
+            i++;
+        } else {
+            i = 0;
+        }
+        setTimeout(changePicture, slideTime);
+    }
+
+   </script>
  </head>
  <body>
-   <main id='page_top' class='full_page_section page_width section_container'>
-     <header>
-       <div id='logo_container'>
-         <div id='logo_box'></div>
-         <h1>JT &nbsp;Portfolio.</h1>
-       </div>
-       <div id='hamburger' class='open'>
-         <button id='hamburger_button'>
-           <div class='line'></div>
-           <div class='line'></div>
-           <div class='line'></div>
-         </button>
-       </div>
-       <nav role="navigation">
-         <ul>
-           <li class='small_device'><a href='index.html#page_top'>Back to top</a></li>
-           <li><a href="index.html#about_container">About Me</a></li>
-           <li><a href="index.html#project_container">Projects</a></li>
-           <li class='small_device sub_list'><a href='random-number-generator.html'>Random Number Generator</a></li>
-           <li class='small_device sub_list'><a href='drawings-using-css.html'>Drawings Using CSS</a></li>
-           <li><a href="#contact_container">Contact Me</a></li>
-         </ul>
-       </nav>
-     </header>
-     <div id="introduction_container">
-       <div class='text_container'>
-         <h2>Hi, I'm James!</h2>
-         <p>Platform Support Engineer jumping back into Frontend Web Development on the side.<br>Welcome to my Portfolio.</p>
-         <a href='#contact_container' class='primary'>Contact Me</a>
-       </div>
-       <div class='image_container'></div>
-     </div>
-     <div id='scroll_container'>
-       <span>Scroll down</span>
-       <div class='down_arrow'></div>
-     </div>
-  </main>
+   <header>
 
-   <section id='about_container' class='full_page_section page_width section_container'>
-     <div id='about_container_text'>
-       <h2>About Me</h2>
-       <p>I grew up in the North East of England and completed my BSc. in Computer Science at Northumbria University.</p>
-       <p>When I jumped into the world of work, I experimented in a few different roles within Computing until I found myself working as a Frontend Developer for a few companies. After a few varied experiences I found myself working at an Affiliate Marketing Company as a Platform Support Engineer helping to keep the Platform running, supporting Clients with customisation requests, building them custom signup tunnels to onboard affiliate partners and identifying and managing bugs/incidents.</p>
-       <p>Outside of work, I love coding, watching films and shows (especially Marvel ones), playing Dungeons and Dragons, and keeping healthy with the gym, body weight exercises and rock climbing.</p>
-       <p>My ambition is to get involved in more Frontend Development with a focus on Accessibility, User Research and eventually transition into Design/UX.</p>
+     <nav>
+       <div class='logo_container'>
+         <img class='logo' src='assets/images/logo.png'/>
+       </div>
+       <ul>
+         <li>
+					<a href="#about"><span>About</span></a>
+				</li>
+        <li>
+					<a href="#projects"><span>Projects</span></a>
+				</li>
+        <li>
+					<a href="#contact"><span>Contact</span></a>
+				</li>
+       </ul>
+     </nav>
+
+     <main>
+       <div class='intro'>
+         <div class="animated-title">
+           <div class="text-top-container">
+             <div>
+               <span class='text'>Hi! I’m <span class='highlight'>James</span>. Welcome to my <span class='highlight'>Portfolio</span>.</span>
+             </div>
+           </div>
+         </div>
+         <div class='button_container'>
+           <a class='button_style primary' href='#projects'>See my projects</a>
+         </div>
+       </div>
+     </main>
+
+   </header>
+
+   <section id='about'>
+     <div class='text_container'>
+       <div class='text'>
+         <h2>About me</h2>
+         <p>I came to Newcastle for University and then stayed in the city for work. I’ve had a couple of jobs within tech, starting as an <span class='bigger'>Assistant Software Developer</span> for HRMC, a <span class='bigger'>Website Developer</span> then a <span class='bigger'>Junior Frontend Developer</span> and I currently work as a <span class='bigger'>Platform Support Engineer</span> for Partnerize.</p>
+         <p>My passion has always been in Website Design and Development, specifically focusing on the User. How do they use the page? Are their needs being met? Can users who have a disability use the page without issue?</p>
+         <p>Outside of work, I love keeping fit with swimming, the gym and rock climbing, experimenting in the kitchen with cooking vegetarian meals, Console and PC gaming, playing Dungeons and Dragons, and travelling to experience the world and finding awesome street art.</p>
+         <a onclick="changePicture()" href="#about" class='picture_pointer'><i class="fas fa-camera-retro"></i><p>Click to take a look at some pictures I’ve taken on my travels</p><i class="fas fa-chevron-right"></i></a>
+       </div>
      </div>
-     <div id='about_container_images'>
-       <img id='image_me' class='circle_image' src='assets/images/me_2.jpeg'/>
-       <img id='image_newcastle' class='circle_image'  src='assets/images/newcastle.JPG'/>
-       <img id='image_bouldering' class='circle_image' src='assets/images/bouldering.jpeg'/>
+     <img id='about_me_image' src='assets/images/newcastle.jpeg' alt="Newcastle Sage" />
+   </section>
+
+   <section id='projects'>
+     <div class='projects_container'>
+       <div class='project_tile'>
+           <h3>Queery website design</h3>
+           <i class="fas fa-pencil-alt"></i>
+           <p>September 2021</p>
+           <a href='#'>TAKE A LOOK <i class="fas fa-chevron-right"></i></a>
+       </div>
+       <div class='project_tile'>
+           <h3>Random number generator</h3>
+           <i class="fab fa-js"></i>
+           <p>September 2021</p>
+           <a href='#'>TAKE A LOOK <i class="fas fa-chevron-right"></i></a>
+       </div>
+       <div class='project_tile'>
+           <h3>Queery logo design</h3>
+           <i class="fas fa-pencil-alt"></i>
+           <p>September 2021</p>
+           <a href='#'>TAKE A LOOK <i class="fas fa-chevron-right"></i></a>
+       </div>
+       <div class='project_tile'>
+           <h3>Drawings using css</h3>
+           <i class="fab fa-css3-alt"></i>
+           <p>September 2021</p>
+           <a href='#'>TAKE A LOOK <i class="fas fa-chevron-right"></i></a>
+       </div>
+     </div>
+     <div class='text'>
+        <h2>Projects</h2>
+        <p>Take a look at the Projects I’ve been working on, from building simple to complex pictures using CSS, to designing and building a website prototype of my friends future company, Queery.<br><br>I’m always adding to this to keep coming back to check on what’s new!</p>
+        <a class='button_style secondary' href='#'>see more</a>
      </div>
    </section>
 
-   <section id='project_container' class='full_page_section page_width section_container'>
-     <div id='section_header'>
-       <h2>Projects</h2>
-       <p>Come see what I've been working on. Working on more and more projects and will add to this as and when they're ready!</p>
-     </div>
-     <div id='projects_tiles_container'>
-       <div class='project_box coming_soon'>
-         <h3>This site itself</h3>
-         <p>This page was built using HTML5 and CSS3 with a touch of Javascript for the navigation toggle (on mobiles). I wanted to build something which was simple to maintain and had a minimal feel. I'm currently rebuilding this site in React so stay tuned to see this when it's live!</p>
-       </div>
-       <div class='project_box new'>
-         <h3><a href='random-number-generator.html'>Random Number Generator</a></h3>
-         <p>A simple tool built in Javascript which takes in a minimum and maximum number and produces a random number between. Take a look and have a play around.</p>
-       </div>
-       <div class='project_box new'>
-         <h3><a href='drawings-using-css.html'>Drawings Using CSS</a></h3>
-         <p>A collection of drawings I've made using pure CSS to practice my skills. Take a look!</p>
-       </div>
-       <div class='project_box coming_soon'>
-         <h3>Affiliate Marketing Custom Signup Tunnels</h3>
-         <p>Custom Tunnels created to onboard Affiliate Partners for clients of a global Affiliate Marketing company based in Newcastle. For legal reasons I can't show the entire pages but I've taken some screenshots to showcase my work.</p>
-       </div>
-     </div>
+   <section id='contact'>
+      <h2>GET IN TOUCH</h2>
+      <form>
+        <legend>Email me using the form below or at contact@jamestuttleportfolio.co.uk</legend>
+        <label for='name'>Name</label>
+        <input type='text' id='name' name='name' placeholder="E.g. Joanne Smith"/>
+
+        <label for'email'>Email</label>
+        <input type='email' id='email' name='email' placeholder="E.g. hi@your-email.com"/>
+
+        <label for='message'>What do you want to say?</label>
+        <textarea id='message' name='message'></textarea>
+
+        <input type='submit' value="Send Email" class='button_style primary'/>
+      </form>
    </section>
 
-   <section id='contact_container' class='page_width section_container full_page_section only_small_devices'>
-     <h2>Contact Me</h2>
-     <p>Get in contact if you want to chat!</p>
-     <p>Email me at <a class='secondary' href='mailto:contact@jamestuttleportfolio.co.uk'>contact@jamestuttleportfolio.co.uk</a><br><small>(Click to open in your email client)</small></p>
-     <p>Download my CV <a class='secondary' href='assets/James Tuttle CV.pdf'>here</a> or find it on LinkedIn below.</p>
-     <br>
-     <a class='primary' href='https://github.com/jamesatuttle'>GitHub</a>
-     <a class='primary' href='https://www.linkedin.com/in/jamesatuttle/'>LinkedIn</a>
-     <a class='primary' href='https://codepen.io/jamestuttle/pens/'>Codepen</a>
-   </section>
-
-   <footer class='page_width'>
-     <div id='copyright_container'>Copyright &copy; 2021 James Tuttle. All rights reserved. | <a href='references.html'>references</a></div>
+   <footer>
+     <div>
+       <img src='assets/images/logo_white.png'/>
+     </div>
+     <div class='links'>
+       <a href='assets/files/James_Tuttle_CV.pdf'>VIEW CV</a>
+       <a href='https://codepen.io/jamestuttle/pens/'>CODEPEN</a>
+       <a href="https://www.linkedin.com/in/jamesatuttle/"><img src='assets/images/linkedin-brands.svg'/></a>
+       <a href="https://github.com/jamesatuttle"><img src='assets/images/github-brands.svg'/></a>
+     </div>
+     <div class='copyright'>
+       COPYRIGHT © 2021 JAMES TUTTLE. ALL RIGHTS RESERVED.
+     </div>
    </footer>
+
  </body>
 </html>
